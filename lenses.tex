@@ -1,0 +1,48 @@
+\begin{frame}
+\begin{block}{OK, but\ldots}
+Why zipper?
+
+If I wanted to modify the element of a tree, why wouldn't I use a lens (or traversal)?
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{block}{OK, but\ldots}
+\begin{lstlisting}[style=haskell]
+immediateChildren :: Traversal (Tree a) (Tree a)
+focus :: Lens (Tree a) a
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Zipper vs Lens}
+\begin{center}
+While lens gives you nice compositional properties, zipper does \emph{context-dependent} updates
+\end{center}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Zipper vs Lens}
+\begin{center}
+\begin{itemize}
+  \item \textbf{lens} \begin{quote}view one hole in a data structure, then operate on it\end{quote}
+  \item \textbf{traversal} \begin{quote}view many holes in a data structure, then operate on it\end{quote}
+  \item \textbf{zipper} \begin{quote}view one hole in a data structure, then \textbf{depend} on it to move efficiently to another hole (and so on)\end{quote}
+\end{itemize}
+\end{center}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Zipper vs Lens}
+\begin{center}
+\begin{itemize}
+  \item \textbf{lens} \begin{quote}view and operate on \lstinline{y} in \lstinline{(x, y, z)}\end{quote}
+  \item \textbf{traversal} \begin{quote}view and operate on all of the \lstinline{y} in \lstinline{(x, y, z, y, [y])}\end{quote}
+  \item \textbf{zipper} \begin{quote}view and operate on a specific \lstinline{y} in \lstinline{(y, y, y)} and depending on the operation outcome, move to a different \lstinline{y} (and so on)\end{quote}
+\end{itemize}
+\end{center}
+\end{block}
+\end{frame}

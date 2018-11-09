@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+NAME=zippers
+DIST=dist
+DIRNAME=$(dirname $0)
+
+# Make PDF
+$DIRNAME/pdf
+
+# Make Postscript
+pdf2ps $DIST/$NAME.pdf $DIST/$NAME.ps

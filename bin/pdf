@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+NAME=zippers
+DIST=dist
+
+mkdir -p $DIST
+pdflatex -aux-directory=$DIST -output-directory=$DIST $NAME.tex

@@ -1,0 +1,66 @@
+1. F a = 1 + a + a^2 + ... 
+
+given FF a = a + a^2 + ...
+F a = 1 + FF a
+FFa = a * F a
+therefore F a = 1 + a * F a
+
+2. F a = 1 + a * F a
+
+-- subtract (a * F a) both sides
+F a - (a * F a) = 1
+(1 * F a) - (a * F a) = 1
+
+-- distributive law
+F a * (1 - a) = 1
+
+-- divide both sides by (1 - a)
+3. F a = 1 / 1 - a
+
+-- https://www.symbolab.com/solver/derivative-calculator/%5Cfrac%7Bd%7D%7Bdx%7D%5Cleft(1%20%2F%201%20-%20x%5Cright)
+-- exponent rule
+F a = (1 - a) ^ (-1)
+
+
+
+-- chain rule
+  let u = 1 - a
+
+  d/da (1 - a) ^ (-1)
+= d/du u^(-1) * d/da (1 - a)
+
+  d/du u^(-1)
+= -1 / (u ^ 2)
+
+  d/da (1 - a)
+= -1
+
+-- therefore
+  d/da (1 - a) ^ (-1)
+= (-1 / (u ^ 2)) * -1
+
+-- substitute back u = (1 - a)
+  d/da (1 - a) ^ (-1)
+= (-1 / ((1 - a) ^ 2)) * -1
+
+-- simplify by multiplying by -1
+  d/da (1 - a) ^ (-1)
+= 1 / ((1 - a) ^ 2)
+
+-- exponential rule
+= (1 / 1 - a) ^ 2
+
+4. d(F a)/da = (1 / 1 - a) ^ 2
+
+5.
+
+Therefore, the derivative of:
+
+1 / 1 - a (step 3)
+
+is
+
+(1 / 1 - a) * (1 / 1 - a)
+
+
+
