@@ -1,0 +1,32 @@
+# Zippers
+
+- definition
+- examples and operations
+  - list
+  - tree
+- comonads
+  - definition
+  - derived functions
+  - xmonad
+  - relationship between zippers and comonads
+- zippers vs lenses
+- algebra
+    - `Bool`
+    - `Maybe`
+    - `Either Void a`
+    - `(Void, a)`
+    - `(Bool, Bool)`
+    - `Either Bool Bool`
+    - `List`
+- zippers as derivatives
+  - `Either x (x, x)`
+  - `(Either x x, Either x x)`
+  - `(x, x, x)`
+  - derivative ~ zipper
+  - `List`
+  - references
+    - https://pavpanchekha.com/blog/zippers/derivative.html
+    - http://www.cs.nott.ac.uk/~psztxa/publ/jpartial.pdf
+    - http://mathb.in/28962
+    - https://codewords.recurse.com/issues/three/algebra-and-calculus-of-algebraic-data-types
+    - d/dx x*x = 2x, d/dx x * x * x = 3xx

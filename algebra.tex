@@ -86,7 +86,7 @@ data Maybe a = Nothing | Just a
 \begin{block}{lost of \lstinline{Bool}}
 \begin{itemize}
   \item<1-> \lstinline{(Bool, Bool)}
-  \item<1-> \lstinline{Either Bool Bool)}
+  \item<1-> \lstinline{Either Bool Bool}
   \item<1-> \lstinline{Bool -> Bool}
   \item<2-> \lstinline{2 * 2}
   \item<2-> \lstinline{2 + 2}
@@ -129,7 +129,7 @@ What is \lstinline{[a]}?
 \begin{block}{Lists}
 \begin{itemize}
   \item<1-> \lstinline{[a]} is either zero \lstinline{a} or one \lstinline{a} or two \lstinline{a} \ldots
-  \item<2-> \lstinline{a}\textsuperscript{\lstinline{0}}\lstinline{ + a}\textsuperscript{\lstinline{1}}\lstinline{ + a}\textsuperscript{\lstinline{2}} \ldots
+  \item<2-> \lstinline{a}\textsuperscript{\lstinline{0}} \lstinline{+ a}\textsuperscript{\lstinline{1}} \lstinline{+ a}\textsuperscript{\lstinline{2}} \ldots
   \item<3-> using algebraic rules, this simplifies to \lstinline{1 + a * [a]}
   \item<3-> \lstinline{1} or \lstinline{(a and [a])}
   \item<3-> The \lstinline{[]} \emph{(carrying \lstinline{Unit})} or \lstinline{(:)} constructor
