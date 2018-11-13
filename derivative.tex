@@ -53,7 +53,7 @@ $\frac{\partial}{\partial x}$ \lstinline{(x + (x * x))}
 
 \par\noindent\rule{\textwidth}{0.4pt}
 
-\lstinline{= Maybe (x, x)}
+\lstinline{= Maybe (Bool, x)}
 \end{center}
 \end{frame}
 
@@ -65,7 +65,7 @@ $\frac{\partial}{\partial x}$ \lstinline{Either x (x, x)}
 
 \par\noindent\rule{\textwidth}{0.4pt}
 
-\lstinline{= Maybe (x, x)}
+\lstinline{= Maybe (Bool, x)}
 \end{center}
 \end{block}
 \end{frame}
@@ -135,7 +135,7 @@ $\frac{\partial}{\partial x}$ \lstinline{(Either x x, Either x x)}
 
 \par\noindent\rule{\textwidth}{0.4pt}
 
-\lstinline{= (x, x, x, x, x, x, x, x)}
+\lstinline{= (Maybe Bool -> Bool, x)}
 \end{center}
 \end{block}
 \end{frame}
@@ -200,8 +200,8 @@ $\frac{\partial}{\partial x}$ \lstinline{(x, x, x)}
 \end{center}
 \begin{block}{Summary}
 \begin{itemize}
-  \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{Either x (x, x) = Maybe (x, x)}}
-  \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{(Either x x, Either x x) = (x, x, x, x, x, x, x, x)}}
+  \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{Either x (x, x) = Maybe (Bool, x)}}
+  \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{(Either x x, Either x x) = (Maybe Bool -> Bool, x)}}
   \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{(x, x, x) = (Maybe Bool, x, x)}}
 \end{itemize}
 \end{block}
@@ -224,7 +224,7 @@ $\frac{\partial}{\partial x}$ \lstinline{(x, x, x)}
 \begin{block}{Let's stare}
 \begin{itemize}
   \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{Either x (x, x) = Maybe (x, x)}}
-  \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{(Either x x, Either x x) = (x, x, x, x, x, x, x, x)}}
+  \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{(Either x x, Either x x) = (Maybe Bool -> Bool, x)}}
   \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{(x, x, x) = (Maybe Bool, x, x)}}
 \end{itemize}
 \end{block}
