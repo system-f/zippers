@@ -217,18 +217,18 @@ $\frac{\partial}{\partial x}$ \lstinline{(x, x, x)}
 \end{frame}
 
 
-\begin{frame}
-\begin{center}
-\includegraphics[width=0.3\textheight]{image/crosseyed.png}
-\end{center}
-\begin{block}{Let's stare}
-\begin{itemize}
-  \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{Either x (x, x) = Maybe (x, x)}}
-  \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{(Either x x, Either x x) = (Maybe Bool -> Bool, x)}}
-  \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{(x, x, x) = (Maybe Bool, x, x)}}
-\end{itemize}
-\end{block}
-\end{frame}
+% \begin{frame}
+% \begin{center}
+% \includegraphics[width=0.3\textheight]{image/crosseyed.png}
+% \end{center}
+% \begin{block}{Let's stare}
+% \begin{itemize}
+%   \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{Either x (x, x) = Maybe (x, x)}}
+%   \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{(Either x x, Either x x) = (Maybe Bool -> Bool, x)}}
+%   \item \scriptsize{$\frac{\partial}{\partial x}$ \lstinline{(x, x, x) = (Maybe Bool, x, x)}}
+% \end{itemize}
+% \end{block}
+% \end{frame}
 
 \begin{frame}
 \begin{block}{Let's do list \tiny{you know you want to}}
@@ -365,18 +365,4 @@ ListZipper ~ (List a, a, List a)
 \begin{center}
 \lstinline{data ListZipper a = ListZipper [a] a [a]}
 \end{center}
-
-\vspace{1cm}
-
-\begin{center}
-\includegraphics[width=0.3\textheight]{image/crosseyed-swirl.png}
-\end{center}
-
-\begin{center}
-I shall not rob the reader of the fun task of differentiating \lstinline{Tree}
-
-\lstinline{data Tree a = Tree a [Tree a]}
-
-\end{center}
-
 \end{frame}
