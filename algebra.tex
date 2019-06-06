@@ -7,25 +7,25 @@ Algebraic Data Types can be thought of in terms of regular algebraic equations
 \begin{frame}
 \begin{block}{Some examples include}
 \begin{itemize}
-  \item \textbf{sum types}
+  \item<1-> \textbf{sum types}
 
-        \lstinline{Either A B} or ``A or B'' corresponds to the equation \lstinline{A + B}
-  \item \textbf{product types}
+            \lstinline{Either A B} or ``A or B'' corresponds to the equation \lstinline{A + B}
+  \item<2-> \textbf{product types}
 
-        \lstinline{(A, B)} or ``A and B'' corresponds to the equation \lstinline{A * B}
-  \item \textbf{exponentiation}
+            \lstinline{(A, B)} or ``A and B'' corresponds to the equation \lstinline{A * B}
+  \item<3-> \textbf{exponentiation}
 
-        \lstinline{A -> B} corresponds to the equation \lstinline{B}\textsuperscript{\lstinline{A}}
-  \item \textbf{unit}
+            \lstinline{A -> B} corresponds to the equation \lstinline{B}\textsuperscript{\lstinline{A}}
+  \item<4-> \textbf{unit}
 
-        given \lstinline{data Unit = Unit},
+            given \lstinline{data Unit = Unit},
 
-        the \lstinline{Unit} data type corresponds to the value \lstinline{1}
-  \item \textbf{void}
+            the \lstinline{Unit} data type corresponds to the value \lstinline{1}
+  \item<5-> \textbf{void}
 
-        given \lstinline{data Void},
+            given \lstinline{data Void},
 
-        the \lstinline{Void} data type corresponds to the value \lstinline{0}
+            the \lstinline{Void} data type corresponds to the value \lstinline{0}
 \end{itemize}
 \end{block}
 \end{frame}
