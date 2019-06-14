@@ -238,11 +238,11 @@ data Tree a =
 \begin{lstlisting}[style=haskell]
 data TreeZipper a =
   TreeZipper
-    [Tree a]                -- left siblings
-    [Tree a]                -- right siblings
-    a                       -- focus
-    [Tree a]                -- children
-    ([Tree a], a, [Tree a]) -- parents
+    [Tree a]                  -- left siblings
+    [Tree a]                  -- right siblings
+    a                         -- focus
+    [Tree a]                  -- children
+    [([Tree a], a, [Tree a])] -- parents
 \end{lstlisting}
 \end{block}
 \end{frame}
