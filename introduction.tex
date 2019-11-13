@@ -130,10 +130,10 @@ data ListZipper a =
 \begin{center}
 Some useful operations on a list zipper:
 \begin{itemize}
-  \item<1-> \tiny{\lstinline{moveLeft/Right :: ListZipper a -> Maybe (ListZipper a)}}
-  \item<2-> \tiny{\lstinline{findLeft/Right :: (a -> Bool) -> ListZipper a -> Maybe (ListZipper a)}}
-  \item<3-> \tiny{\lstinline{modify :: (a -> a) -> ListZipper a -> ListZipper a}}
-  \item<4-> \tiny{\lstinline{delete :: ListZipper a -> Maybe (ListZipper a)}}
+  \item \tiny{\lstinline{moveLeft/Right :: ListZipper a -> Maybe (ListZipper a)}}
+  \item \tiny{\lstinline{findLeft/Right :: (a -> Bool) -> ListZipper a -> Maybe (ListZipper a)}}
+  \item \tiny{\lstinline{modify :: (a -> a) -> ListZipper a -> ListZipper a}}
+  \item \tiny{\lstinline{delete :: ListZipper a -> Maybe (ListZipper a)}}
 \end{itemize}
 \end{center}
 \end{block}
@@ -252,13 +252,13 @@ data TreeZipper a =
 \begin{center}
 Some useful operations on a tree zipper:
 \begin{itemize}
-  \item<1-> \tiny{\lstinline{moveParent/Child :: TreeZipper a -> Maybe (TreeZipper a)}}
-  \item<2-> \tiny{\lstinline{moveLeft/Right :: TreeZipper a -> Maybe (TreeZipper a)}}
-  \item<3-> \tiny{\lstinline{find :: (a -> Bool) -> TreeZipper a -> Maybe (TreeZipper a)}}
-  \item<4-> \tiny{\lstinline{all :: (a -> Bool) -> TreeZipper a -> Bool}}
-  \item<5-> \tiny{\lstinline{modify :: (a -> a) -> TreeZipper a -> TreeZipper a}}
-  \item<6-> \tiny{\lstinline{modifyTree :: (Tree a -> Tree a) -> TreeZipper a -> TreeZipper a}}
-  \item<7-> \tiny{\lstinline{insertSiblingLeft/Right :: Tree a -> TreeZipper a -> TreeZipper a}}
+  \item \tiny{\lstinline{moveParent/Child :: TreeZipper a -> Maybe (TreeZipper a)}}
+  \item \tiny{\lstinline{moveLeft/Right :: TreeZipper a -> Maybe (TreeZipper a)}}
+  \item \tiny{\lstinline{find :: (a -> Bool) -> TreeZipper a -> Maybe (TreeZipper a)}}
+  \item \tiny{\lstinline{all :: (a -> Bool) -> TreeZipper a -> Bool}}
+  \item \tiny{\lstinline{modify :: (a -> a) -> TreeZipper a -> TreeZipper a}}
+  \item \tiny{\lstinline{modifyTree :: (Tree a -> Tree a) -> TreeZipper a -> TreeZipper a}}
+  \item \tiny{\lstinline{insertSiblingLeft/Right :: Tree a -> TreeZipper a -> TreeZipper a}}
 \end{itemize}
 \end{center}
 \end{block}
